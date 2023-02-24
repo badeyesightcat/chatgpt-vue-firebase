@@ -1,5 +1,5 @@
 <template>
-  <aside class="sidebar">
+  <aside class="flex flex-col h-screen p-2">
     <button>New Chat</button>
     <!-- <nav>
       <ul>
