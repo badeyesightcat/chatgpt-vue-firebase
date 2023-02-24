@@ -1,0 +1,16 @@
+<template>
+  <aside class="sidebar">
+    <button>New Chat</button>
+    <!-- <nav>
+      <ul>
+        <li><a href=""></a></li>
+      </ul>
+    </nav> -->
+  </aside>
+</template>
+<script>
+export default {
+  name: 'Sidebar',
+};
+</script>
+<style scoped></style>
