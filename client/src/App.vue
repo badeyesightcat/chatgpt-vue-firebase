@@ -1,17 +1,17 @@
 <script>
 import Home from './views/Home.vue';
-import SignIn from './views/SignIn.vue';
+import Gate from './views/Gate.vue';
 
 export default {
   name: 'App',
   components: {
     Home,
-    SignIn,
+    Gate,
   },
   data() {
     return {
       user: null,
-      isSignedIn: true,
+      isSignedIn: false,
     };
   },
 };
@@ -23,7 +23,7 @@ export default {
       <Home />
     </template>
     <template v-else>
-      <SignIn />
+      <Gate />
     </template>
   </div>
 </template>
