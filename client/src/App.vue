@@ -1,20 +1,30 @@
 <script>
-import Sidebar from './components/Sidebar.vue';
-import ChatSection from './components/ChatSection.vue';
+import Home from './views/Home.vue';
+import SignIn from './views/SignIn.vue';
 
 export default {
   name: 'App',
   components: {
-    Sidebar,
-    ChatSection,
+    Home,
+    SignIn,
+  },
+  data() {
+    return {
+      user: null,
+      isSignedIn: true,
+    };
   },
 };
 </script>
 
 <template>
   <div class="flex">
-    <Sidebar />
-    <ChatSection />
+    <template v-if="isSignedIn">
+      <Home />
+    </template>
+    <template v-else>
+      <SignIn />
+    </template>
   </div>
 </template>
 
