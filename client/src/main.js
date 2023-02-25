@@ -3,15 +3,15 @@ import { createApp } from 'vue';
 import './style.css';
 import App from './App.vue';
 
-// const firebaseConfig = {
-//   apiKey: 'AIzaSyASoLz6IkNAE4MfAIjQ01h7lE1Nsi3wFxE',
-//   authDomain: 'chatgpt-clone-vue.firebaseapp.com',
-//   projectId: 'chatgpt-clone-vue',
-//   storageBucket: 'chatgpt-clone-vue.appspot.com',
-//   messagingSenderId: '966759091935',
-//   appId: '1:966759091935:web:c9c811781ca7d8a573636a',
-//   measurementId: 'G-X9M661LXSL',
-// };
-// firebase.initializeApp(firebaseConfig);
+const firebaseConfig = {
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
+  measurementId: process.env.MEASUREMENT_ID,
+};
+firebase.initializeApp(firebaseConfig);
 
 createApp(App).mount('#app');
