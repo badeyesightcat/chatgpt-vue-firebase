@@ -11,6 +11,10 @@
     @apply rounded-lg px-5 py-3 text-sm flex items-center justify-center space-x-2 hover:bg-gray-700/70 cursor-pointer text-gray-300 transition-all duration-200 ease-out;
   }
 
+  .btn {
+    @apply items-center border-transparent rounded border text-sm py-2 px-3 pointer-events-auto;
+  }
+
   .btn-primary {
     @apply bg-[rgb(16,163,127)] text-white;
   }
