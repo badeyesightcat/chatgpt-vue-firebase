@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="flex flex-col h-screen p-2 bg-[#202123] max-w-xs h-screen overflow-y-auto md:min-w-[20rem]">
+    class="flex flex-col h-screen p-2 bg-[#202123] max-w-xs overflow-y-auto md:min-w-[20rem]">
     <NewChatButton />
     <!-- <nav>
       <ul>
@@ -17,4 +17,3 @@ export default {
   components: { NewChatButton },
 };
 </script>
-<style scoped></style>
