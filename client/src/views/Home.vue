@@ -1,6 +1,8 @@
 <template>
-  <Sidebar />
-  <ChatSection />
+  <div class="flex">
+    <Sidebar />
+    <ChatSection />
+  </div>
 </template>
 
 <script>
