@@ -1,7 +1,18 @@
 <template>
-  <main>
-    <button type="submit">Continue with Google</button>
-    <router-link to="./sign-up">Don't have an account? Sign Up</router-link>
+  <main
+    class="w-full h-screen flex justify-center items-center flex-col bg-gray-50 dark:bg-gray-800">
+    <section class="w-96 flex flex-col justify-center items-center">
+      <strong class="text-center text-3xl px-10 pt-10 pb-8"
+        >Welcome back</strong
+      >
+      <button class="btn flex justify-center gap-2 btn-primary" type="submit">
+        Continue with Google
+      </button>
+      <p class="mt-4">
+        Don't have an account?
+        <router-link class="link" to="./sign-up">Sign Up</router-link>
+      </p>
+    </section>
   </main>
 </template>
 

@@ -1,16 +1,18 @@
 <template>
-  <main>
-    <header>
-      <h1>Create your account</h1>
-      <p>
-        Please note that phone verification is required for signup. Your number
-        will only be used to verify your identity for security purposes.
+  <main
+    class="w-full h-screen flex justify-center items-center flex-col bg-gray-50 dark:bg-gray-800">
+    <section class="w-96 flex flex-col justify-center items-center">
+      <strong class="text-center text-3xl px-10 pt-10 pb-8"
+        >Create your account</strong
+      >
+      <button class="btn flex justify-center gap-2 btn-primary" type="submit">
+        Continue with Google
+      </button>
+      <p class="mt-4">
+        Already have an account?
+        <router-link class="link" to="./sign-in"> Log in</router-link>
       </p>
-    </header>
-    <div>
-      <router-link to="./sign-in">Already have an account? Log in</router-link>
-      <button type="submit">Continue with Google</button>
-    </div>
+    </section>
   </main>
 </template>
 
