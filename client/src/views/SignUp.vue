@@ -30,7 +30,7 @@
       </button> -->
       <p class="mt-4">
         Already have an account?
-        <router-link class="link" to="./sign-in"> Log in</router-link>
+        <router-link class="link" to="./sign-in">Sign in</router-link>
       </p>
     </section>
   </main>
