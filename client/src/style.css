@@ -18,4 +18,8 @@
   .btn-primary {
     @apply bg-[rgb(16,163,127)] text-white;
   }
+
+  .link {
+    @apply text-[#10a37f];
+  }
 }
