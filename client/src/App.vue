@@ -1,11 +1,8 @@
 <script>
 export default {
   name: 'App',
-  data() {
-    return {
-      user: null,
-      isSignedIn: false,
-    };
+  beforeMount() {
+    this.$store.dispatch('fetchUserAction');
   },
 };
 </script>
