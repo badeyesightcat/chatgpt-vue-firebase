@@ -80,6 +80,24 @@ const store = createStore({
 
       router.push('/');
     },
+    fetchUserAction({ commit, state }) {
+      auth.onAuthStateChanged(async (user) => {
+        if (user === null) {
+          commit(CLEAR_USER);
+        } else {
+          commit(SET_USER, user);
+
+          if (
+            router.isReady() &&
+            (router.currentRoute.value.path === '/' ||
+              router.currentRoute.value.path === '/sign-in' ||
+              router.currentRoute.value.path === '/sign-up')
+          ) {
+            router.push('/home');
+          }
+        }
+      });
+    },
   },
 });
 
