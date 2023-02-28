@@ -7,16 +7,17 @@
         <li><a href=""></a></li>
       </ul>
     </nav> -->
-    <button @click="signOut">Sign Out</button>
+    <SidebarBottom />
   </aside>
 </template>
 <script>
 import { mapActions } from 'vuex';
 import NewChatButton from './NewChatButton.vue';
+import SidebarBottom from './SidebarBottom.vue';
 
 export default {
   name: 'Sidebar',
-  components: { NewChatButton },
+  components: { NewChatButton, SidebarBottom },
   methods: {
     ...mapActions({
       signOut: 'signOutAction',
