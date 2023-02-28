@@ -1,6 +1,6 @@
 <template>
   <main
-    class="w-full h-screen flex justify-center items-center flex-col bg-gray-50 dark:bg-gray-800">
+    class="w-full h-screen flex justify-center items-center flex-col bg-gray-50">
     <section class="w-96 flex flex-col justify-center items-center">
       <strong class="mb-2 text-center">Welcome to ChatGPT</strong>
       <p class="mb-4 text-center">
@@ -10,12 +10,12 @@
         <button
           class="btn flex justify-center gap-2 btn-primary"
           @click="handleSignIn">
-          SignIn
+          Sign In
         </button>
         <button
           class="btn flex justify-center gap-2 btn-primary"
           @click="handleSignUp">
-          SignUp
+          Sign Up
         </button>
       </div>
     </section>

@@ -1,6 +1,6 @@
 <template>
   <main
-    class="w-full h-screen flex justify-center items-center flex-col bg-gray-50 dark:bg-gray-800">
+    class="w-full h-screen flex justify-center items-center flex-col bg-gray-50">
     <section class="w-96 flex flex-col justify-center items-center">
       <strong class="text-center text-3xl px-10 pt-10 pb-8"
         >Welcome back</strong
