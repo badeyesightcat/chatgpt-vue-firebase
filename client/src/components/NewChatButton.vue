@@ -26,12 +26,6 @@ export default {
       userEmailSignedIn: (state) => state.user.email,
     }),
   },
-  // firestore: {
-  //   chats: collection(db, 'chats'),
-  // },
-  mounted() {
-    console.log(this.userEmailSignedIn);
-  },
   methods: {
     async addNewChat() {
       const doc = await addDoc(
