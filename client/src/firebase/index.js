@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
+import { getFirestore, collection } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyASoLz6IkNAE4MfAIjQ01h7lE1Nsi3wFxE',
@@ -11,7 +12,10 @@ const firebaseConfig = {
   measurementId: 'G-X9M661LXSL',
 };
 
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// const app = initializeApp(firebaseConfig);
 
 const auth = getAuth();
 // auth.languageCode = 'ko';

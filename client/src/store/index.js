@@ -4,7 +4,7 @@ import {
   signOut,
   signInWithEmailAndPassword,
 } from 'firebase/auth';
-import { auth } from '@/firebase/auth';
+import { auth } from '@/firebase';
 import router from '@/router';
 import { SET_USER, CLEAR_USER } from '@/store/mutationTypes';
 
