@@ -11,17 +11,11 @@
   </aside>
 </template>
 <script>
-import { mapActions } from 'vuex';
 import NewChatButton from './NewChatButton.vue';
 import SidebarBottom from './SidebarBottom.vue';
 
 export default {
   name: 'Sidebar',
   components: { NewChatButton, SidebarBottom },
-  methods: {
-    ...mapActions({
-      signOut: 'signOutAction',
-    }),
-  },
 };
 </script>
