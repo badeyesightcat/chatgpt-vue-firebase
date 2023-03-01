@@ -4,14 +4,20 @@ import {
   signOut,
   signInWithEmailAndPassword,
 } from 'firebase/auth';
-import { auth } from '@/firebase';
+import { auth, db } from '@/firebase';
 import router from '@/router';
-import { SET_USER, CLEAR_USER } from '@/store/mutationTypes';
+import {
+  SET_USER,
+  CLEAR_USER,
+  SET_CHATS,
+  CLEAR_CHATS,
+} from '@/store/mutationTypes';
 
 const store = createStore({
   state() {
     return {
       user: null,
+      chats: [],
     };
   },
   mutations: {
@@ -20,6 +26,12 @@ const store = createStore({
     },
     [CLEAR_USER](state) {
       state.user = null;
+    },
+    [SET_CHATS](state, chats) {
+      state.chats = chats;
+    },
+    [CLEAR_CHATS](state) {
+      state.chats = [];
     },
   },
   actions: {
@@ -98,6 +110,16 @@ const store = createStore({
         }
       });
     },
+    // fetchChatsAction({ commit, state }) {
+    //   auth.onAuthStateChanged(async (user) => {
+    //     if (user === null) {
+    //       commit(CLEAR_CHATS);
+    //     } else {
+    //       const
+    //       commit(SET_CHATS);
+    //     }
+    //   });
+    // },
   },
 });
 
