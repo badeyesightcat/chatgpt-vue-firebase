@@ -37,7 +37,6 @@ export default {
       const doc = await addDoc(
         collection(db, 'users', this.userEmailSignedIn, 'chats'),
         {
-          messages: [],
           userId: this.userEmailSignedIn,
           createdAt: serverTimestamp(),
         },
