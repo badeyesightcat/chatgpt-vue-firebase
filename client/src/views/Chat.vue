@@ -1,19 +1,19 @@
 <template>
   <div class="flex">
     <Sidebar />
-    <ChatSectionDefault />
+    <ChatLog />
   </div>
 </template>
 
 <script>
 import Sidebar from '../components/Sidebar.vue';
-import ChatSectionDefault from '../components/ChatSectionDefault.vue';
+import ChatLog from '../components/ChatLog.vue';
 
 export default {
-  name: 'Home',
+  name: 'Chat',
   components: {
     Sidebar,
-    ChatSectionDefault,
+    ChatLog,
   },
 };
 </script>
