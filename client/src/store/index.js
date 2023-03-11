@@ -92,7 +92,7 @@ const store = createStore({
 
       router.push('/');
     },
-    fetchUserAction({ commit, state }) {
+    fetchUserAction({ commit }) {
       auth.onAuthStateChanged(async (user) => {
         if (user === null) {
           commit(CLEAR_USER);
@@ -110,16 +110,6 @@ const store = createStore({
         }
       });
     },
-    // fetchChatsAction({ commit, state }) {
-    //   auth.onAuthStateChanged(async (user) => {
-    //     if (user === null) {
-    //       commit(CLEAR_CHATS);
-    //     } else {
-    //       const
-    //       commit(SET_CHATS);
-    //     }
-    //   });
-    // },
   },
 });
 
